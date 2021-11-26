@@ -1,0 +1,293 @@
+
+header#header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1062%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1488 560L0 560 L0 376.16Q55.06 359.22%2c 72 414.28Q107.13 329.41%2c 192 364.55Q260.69 313.25%2c 312 381.94Q362.98 360.92%2c 384 411.9Q452.31 360.2%2c 504 428.51Q544.06 348.56%2c 624 388.62Q692.53 337.15%2c 744 405.68Q812.01 353.69%2c 864 421.7Q876.93 362.63%2c 936 375.56Q966.67 334.23%2c 1008 364.89Q1063.62 348.5%2c 1080 404.12Q1130.78 334.9%2c 1200 385.68Q1264.19 377.87%2c 1272 442.06Q1291.89 389.95%2c 1344 409.84Q1362.83 356.66%2c 1416 375.49Q1462.95 350.44%2c 1488 397.39z' fill='rgba(53%2c 108%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 461.51Q55.42 396.93%2c 120 452.35Q175.76 436.12%2c 192 491.88Q201.16 429.04%2c 264 438.2Q315.14 417.34%2c 336 468.48Q396.45 456.93%2c 408 517.38Q457.5 446.88%2c 528 496.38Q539.87 436.25%2c 600 448.12Q643.37 419.49%2c 672 462.85Q745.71 416.56%2c 792 490.27Q797.62 423.88%2c 864 429.5Q931.87 377.37%2c 984 445.24Q1081.51 422.75%2c 1104 520.26Q1155.46 451.73%2c 1224 503.19Q1226.79 433.98%2c 1296 436.76Q1342.4 411.16%2c 1368 457.57Q1455.6 425.16%2c 1488 512.76z' fill='rgba(37%2c 70%2c 125%2c 1)'%3e%3c/path%3e%3cpath d='M1560 560L0 560 L0 511.34Q35.94 475.27%2c 72 511.21Q144.58 511.79%2c 144 584.37Q169.75 538.13%2c 216 563.88Q234.76 510.64%2c 288 529.4Q371.32 492.72%2c 408 576.05Q435.16 531.21%2c 480 558.37Q506.41 512.78%2c 552 539.19Q594.79 461.99%2c 672 504.78Q742.05 454.83%2c 792 524.88Q873.4 486.28%2c 912 567.68Q942.98 526.66%2c 984 557.64Q990.18 491.82%2c 1056 497.99Q1126.63 496.63%2c 1128 567.26Q1151.07 518.33%2c 1200 541.39Q1241.53 462.91%2c 1320 504.44Q1415.04 479.48%2c 1440 574.52Q1481.94 496.46%2c 1560 538.41z' fill='rgba(24%2c 47%2c 93%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1062'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size: cover;
+}
+div#leftSide {
+    width: 45%;
+    margin-top: 10%;
+}
+div#heroContainer {
+    display: flex;
+    height: 60vh;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1#bigTitle {
+    font-size: 400%;
+}
+p#heroDesc {
+    font-size: 150%;
+}
+p#heroDesc {
+    font-family: 'Exo 2', sans-serif;
+    /* font-weight: bold; */
+}
+div#keyNumbers {
+    display: flex;
+    justify-content: space-between;
+}
+div.keyNumber {
+    background-color: var(--color);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2%;
+    font-size: 150%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+div.keyNumber:hover {
+    transform: translateX(-5%) translateY(-5%);
+}
+div#rightSide {
+    display: flex;
+    width: 40%;
+    height: fit-content;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+img#heroImg {
+    width: 100%;
+}
+div.section {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    flex-direction: column;
+}
+div.section > div > div > h1 {
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+div.section > div > div > p {
+    font-size: 150%;
+}
+.mainTitleSection {
+    font-size: 300%;
+    text-align: center;
+    margin: 5% 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.mainTitleSection.not-visible {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+div.rowQuality {
+    display: flex;
+    width: 100%;
+    margin: 5% auto 0;
+}
+div.rowInverted {
+    display: flex;
+    flex-direction: row-reverse;
+}
+div.imageQuality {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.imageQuality.not-visible {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+div.textQuality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.textQuality.not-visible {
+    transform: translateX(50px);
+    opacity: 0;
+}
+div.imageQuality > img {
+    width: 50%;
+    margin: 0 25%;
+}
+div.transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 0;
+    z-index: -1000;
+    background-image: url('../res/index/transition1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    content: "";
+    height: 40vh;
+    margin: 10% 0 0;
+    color: var(--primary);
+    transition: height 0.5s ease;
+}
+div.transition > img {
+    width: 100%;
+}
+div.transition.notreduced {
+    height: 1vh;
+}
+section.portfolio {
+    width: 100vw;
+    background-color: var(--color);
+    color: var(--primary);
+    transition: all 0.5s ease;
+}
+section.portfolio.notpassed {
+    background-color: var(--primary);
+    color: var(--color);
+}
+div.rowPortfolio {
+    display: flex;
+    width: 100%;
+    margin: 8% auto 0;
+    opacity: 1;
+    justify-content: space-between;
+    transform: translateX(0px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.rowPortfolio:last-of-type {
+    margin-bottom: 10%;
+}
+div.rowPortfolio.rowInverted {
+    justify-content: space-between !important;
+}
+div.rowPortfolio.not-visible {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+div.rowPortfolio.rowInverted.not-visible {
+    opacity: 0;
+    transform: translateX(50px);
+}
+div.textPortfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(0);
+    opacity: 1;
+    width: 45%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.imagePortfolio {
+    display: flex;
+    /* margin: 0 auto; */
+    width: 50%;
+}
+div.imagePortfolio > img {
+    width: 100%;
+}
+
+section.performance {
+    width: 100vw;
+    background-color: var(--primary);
+    color: var(--color);
+    transition: all 0.5s ease;
+}
+section.performance.notpassed {
+    background-color: var(--color);
+    color: var(--primary);
+}
+p.quote {
+    padding: 8%;
+    font-size: 200%;
+    margin-top: 10%;
+    text-align: left;
+    width: fit-content;
+    background: linear-gradient(120deg, var(--blue) 0%, var(--blue) 100%);
+    background-repeat: no-repeat;
+    background-size: 1% 70%;
+    background-position: 0% 70%;
+    color: var(--color);
+    transition: all 0.7s ease;
+}
+div.containerGauges {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.sc-gauge  {
+    display: block;
+    width:200px; 
+    height:200px; 
+    margin: 4% auto; 
+}
+.titleGauge {
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 10%;
+}
+.sc-background { 
+    position:relative; 
+    height:100px; 
+    margin-bottom:10px; 
+    background-color: var(--secondary); 
+    border-radius:150px 150px 0 0; 
+    overflow:hidden; 
+    text-align:center; 
+}
+.sc-mask { 
+    position:absolute; 
+    top:20px; 
+    right:20px; 
+    left:20px; 
+    height:80px; 
+    background-color: var(--primary); 
+    border-radius: 150px 150px 0 0;
+}
+.sc-percentage { 
+    position:absolute; 
+    top:100px; 
+    width:400%; 
+    height:400%; 
+    margin-left:100px; 
+    background-color:var(--green); 
+    transition: left 0.9s ease;
+}
+.sc-percentage.notpassed { 
+    left: -800px !important; 
+}
+.Pperformance {
+    left:-173%; 
+}
+.Paccessibility {
+    left:-180%; 
+}
+.PbestPractice {
+    left: -165%; 
+}
+.Pseo {
+    left:-190%; 
+}
+.sc-percentage { 
+    transform:rotate(158deg); 
+    transform-origin:top center; 
+}
+.sc-min { 
+    float:left; 
+}
+.sc-max { 
+    float:right; 
+}
+.sc-value { 
+    position:absolute; 
+    top:50%; 
+    left:0; 
+    width:100%;  
+    font-size:48px; 
+    font-weight:700 
+}

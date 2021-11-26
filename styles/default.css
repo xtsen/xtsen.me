@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Outfit:wght@400;500;600;700;800&display=swap');
+:root {
+    --primary: #F5F5F5;
+    --secondary: #ececec;
+    --tertiary: rgb(223, 223, 223);
+    --button: rgb(42, 42, 42);
+
+    --color: #222222;
+    --blue: #0177FB;
+    --green: #4fce79;
+    /* --blue: #7e2eff; */
+    --blueHovered: #005eca;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+
+    background-color: var(--primary);
+    color: var(--color);
+    font-family: 'Outfit', sans-serif;
+}
+nav#topNavbar {
+    /* background-color: var(--secondary); */
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+ul#listRedirect {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+ul#listRedirect > li.redirect {
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(120deg, var(--blue) 0%, var(--blue) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 10%;
+    background-position: 0 80%;
+    color: var(--color);
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+ul#listRedirect > li.redirect:hover {
+    /* background-size: 100% 70%; */
+    background-position: 0 15%;
+}
+
+#svgTransition {
+    transform: scaleY(-1);
+    width: 100vw;
+}
+main#main {
+    display: flex;
+    width: 100vw;
+    flex-direction: column
+}
+/* section#sectionSkills {
+    display: flex;
+    margin: 10% auto 5%;
+    flex-direction: column;
+    background-color: var(--color);
+    color: var(--primary);
+    width: 45vw;
+    padding: 2%;
+}
+div.skillContainer {
+    width: 90%;
+    background-color: var(--primary);
+    border-radius: 30px;
+    height: 10px;
+    align-content: center;
+    justify-content: center;
+}
+div.skill {
+    background-color: var(--blue);
+    height: 10px;
+    border-radius: 30px
+}
+div.skill#skillHTML {
+    width: 90%;
+}
+div.skill#skillCSS {
+    width: 80%;
+}
+div.skill#skillJS {
+    width: 70%;
+} */
+
+
+/* ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
+/* ≠≠≠≠≠≠≠≠≠ footer ≠≠≠≠≠≠≠≠≠ */
+/* ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
+
+footer {
+    min-height: 40vh;
+    width: 100vw;
+    margin-top: 10%;
+    background: var(--secondary);
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+footer > div#sectionsFooter {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: left;
+    padding-left: 10%;
+}
+footer > h2.titleSection {
+    margin-left: 5%;
+    font-size: 200%;
+    width: fit-content;
+}
+footer > div#sectionsFooter > div.containerLinks {
+    margin-right: 10%;
+    background: var(--tertiary);
+    padding: 1.5%;
+    border-radius: 5px;
+    min-width: 15%;
+    margin-bottom: 0%;
+}
+footer > div#sectionsFooter > div.containerLinks > h3.mainTitleContainerLinks {
+    margin-bottom: 10%;
+}
+footer > div#sectionsFooter > div.containerLinks > div.linksFooter {
+    padding-left: 20%;
+}
+div.subContainerLinks {
+    margin-top: 2%;
+}
+div.subContainerLinks > a {
+    margin-top: 1%;
+    cursor: pointer;
+    color: var(--blue);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+div.subContainerLinks > a {
+    color: var(--blueHovered);
+}
+div#subLinks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: flex-start;
+}
+div#subLinks > .link {
+    margin-left: 5%;
+    margin-top: 0;
+    cursor: pointer;
+    color: var(--color)
+}
