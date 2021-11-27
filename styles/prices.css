@@ -1,0 +1,119 @@
+section.containerPrices {
+    margin-top: 8%;
+}
+section.containerPrices > h1 {
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 200%;
+}
+div.packages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+div.package {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3%;
+    text-align: center;
+    min-height: 60vh;
+    width: 20vw;
+    cursor: default;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+div.package:hover {
+    transform: scale(1.05);
+}
+div.package > p.titlePackage {
+    font-size: 200%;
+    font-weight: bold;
+}
+div.package > p.pricePackage {
+    font-size: 300%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+div.package p {
+    margin-top: 10%;
+    font-size: 120%;
+}
+div.package > p.pricePackage > span.euroSign {
+    font-size: 50%;
+    color: var(--color);
+}
+div.package > p {
+    color: var(--color);
+    transition: all 0.5s ease;
+}
+div.package:hover > p {
+    color: var(--blue);
+}
+div.package.pro {
+    border: 3px solid var(--blue);
+}
+section.moreDetails {
+    background-color: var(--secondary);
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+div.details {
+    display: flex;
+    margin: 0 auto 5%;
+    flex-direction: column;
+    background-color: var(--tertiary);
+    padding: 2%;
+    width: 90%;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.details:first-of-type {
+    margin-top: 5%;
+}
+div.details.notSeen {
+    transform: translateY(0);
+    opacity: 0;
+    
+}
+div.details.pro {
+    border: 3px solid var(--blue);
+}
+div.details > p.titlePackageDetails {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+div.details > p.descPackage {
+    font-size: 130%;
+}
+span.namePackageDetail {
+    color: var(--blue);
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+span.namePackageDetail:hover {
+    color: var(--blueHovered);
+}
+ul.detailsPackage {
+    margin-top: 2%;
+}
+ul.detailsPackage > li {
+    font-size: 120%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+ul.detailsPackage > li.titleDetail {
+    font-weight: bold;
+    list-style: none;
+    margin-left: 0;
+}

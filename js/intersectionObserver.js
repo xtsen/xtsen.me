@@ -52,7 +52,19 @@ let observerPie = new IntersectionObserver(entries => {
   }, {
     threshold: [0.95]
 });
-
+let observerTariffs = new IntersectionObserver(entries => {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > 0.7) {
+      console.log("log");
+      entry.target.classList.remove('notSeen')
+      observerTariffs.unobserve(entry.target)
+    } else {
+        // entry.target.classList.add('notpassed')
+    }
+  })
+  }, {
+    threshold: [0.7]
+});
 
 let mainTitlesSection = document.querySelectorAll('.mainTitleSection')
 mainTitlesSection.forEach(function (mainTitleSection) {
@@ -99,3 +111,10 @@ let pies = document.querySelectorAll('.sc-gauge')
 pies.forEach(pie => {
   observerPie.observe(pie)
 });
+
+// Prices 
+let tariffs = document.querySelectorAll('.details')
+tariffs.forEach(function (tariff) {
+    tariff.classList.add('notSeen')
+    observerTariffs.observe(tariff)
+})

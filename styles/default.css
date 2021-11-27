@@ -8,7 +8,7 @@
     --color: #222222;
     --blue: #0177FB;
     --green: #4fce79;
-    /* --blue: #7e2eff; */
+    --blueOpacity: #0176fbcc;
     --blueHovered: #005eca;
 }
 * {
