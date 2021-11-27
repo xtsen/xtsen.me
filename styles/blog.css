@@ -1,0 +1,55 @@
+div.heroIMGHeader {
+    margin-top: 10%;
+    background-image: url("../res/blog/heroImg.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    height: 40vh;
+    display: flex;
+    color: var(--color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.heroIMGHeader > div.heroText {
+    font-size: 140%;
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 4%;
+    border-radius: 10px;
+}
+div.heroIMGHeader > div.heroText > button {
+    margin-top: 3%;
+    font-size: 100%;
+    text-align: center;
+    background-color: var(--secondary);
+    border: 2px solid var(--blue);
+    padding: 1% 4%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+div.heroIMGHeader > div.heroText > button:hover {
+    background-color: var(--blue);
+    color: var(--primary);
+}
+section#articles {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+div.article {
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto 5%;
+}
+div.article > p.titleArticle {
+    font-size: 200%;
+    font-weight: bold;
+}
+div.article > p.contentArticle {
+    margin: 2% 0 2% 3%;
+    font-size: 130%;
+}

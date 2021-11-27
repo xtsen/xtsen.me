@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>nesta.gallery</title>
         <link rel="stylesheet" href="./styles/default.css">
-        <link rel="stylesheet" href="./styles/prices.css">
+        <link rel="stylesheet" href="./styles/blog.css">
     </head>
-    <body onload="loader()">
+    <body onload="initBlog()">
+
         <nav id="topNavbar">
             <ul id="listRedirect">
                 <li class="redirect"  onclick="goThere('index')">Accueil</li>
@@ -19,84 +20,13 @@
                 <li class="redirect" onclick="goThere('about')">A propos</li>
             </ul>
         </nav>
-
-        <section class="containerPrices">
-            <h1>Mes tarifs :</h1>
-            <div class="packages">
-                <div class="package standard js-scrollTo" href=".moreDetails">
-                    <p class="titlePackage">Standard</p>
-                    <p class="pricePackage">30<span class="euroSign">€</span></p>
-                    <div class="benefits">
-                        <p class="nbPages">Nombre de pages : 1</p>
-                        <p class="nbRevisions">Nombre de revisions : 2</p>
-                        <p class="deliveringTime">Temps de livraison : 7</p>
-                    </div>
-                </div>
-                <div class="package pro js-scrollTo" href=".moreDetails">
-                    <p class="titlePackage">Pro</p>
-                    <p class="pricePackage">60<span class="euroSign">€</span></p>
-                    <div class="benefits">
-                        <p class="nbPages">Nombre de pages : 2-4</p>
-                        <p class="nbRevisions">Nombre de revisions : 4</p>
-                        <p class="deliveringTime">Temps de livraison : 10-15</p>
-                        <p class="sourceCode">Code source livré</p>
-                        <p class="paymentSupport">Support de payment</p>
-                        <p class="paymentSupport">Nom de domaine personalisé</p>
-                    </div>
-                </div>
-                <div class="package premium js-scrollTo" href=".moreDetails">
-                    <p class="titlePackage">Premium</p>
-                    <p class="pricePackage">100<span class="euroSign">€</span></p>
-                    <div class="benefits">
-                        <p class="nbPages">Nombre de pages : illimité</p>
-                        <p class="nbRevisions">Nombre de revisions : 5</p>
-                        <p class="deliveringTime">Temps de livraison : 15-30</p>
-                        <p class="sourceCode">Code source livré</p>
-                        <p class="paymentSupport">Support de payment</p>
-                        <p class="paymentSupport">Nom de domaine personalisé</p>
-                    </div>
-                </div>
+        <div class="heroIMGHeader">
+            <div class="heroText">
+                <p class="descPage">Bienvenue sur mon blog. Vous pourrez retrouvé dans cet espace des articles concernant des sujets variés. J'expliquerai également comment j'ai commencé et comment vous pourriez commencer. </p>
+                <button class="buttonSeeArticles js-scrollTo" href="#articles">Découvrir</button>
             </div>
-        </section>
-        <section class="moreDetails">
-            <div class="details standardDetails">
-                <p class="titlePackageDetails">Standard</p>
-                <p class="descPackage">Le pack <span class="namePackageDetail">Standard</span> est un pack idéal pour une gallerie, un portfolio ou encore une page de présentation. Ce pack ne contient pas beaucoup d'avantages mais est livré rapidement.</p>
-                <ul class="detailsPackage">
-                    <li class="titleDetail">Avantages avec ce pack :</li>
-                    <li class="detailPackage">Nombre de pages : 1</li>
-                    <li class="detailPackage">Nombre de revisions : 2</li>
-                    <li class="detailPackage">Temps de livraison : 7</li>
-                </ul>
-            </div>
-            <div class="details proDetails">
-                <p class="titlePackageDetails">Pro</p>
-                <p class="descPackage">Le pack <span class="namePackageDetail">Pro</span> est idéal pour un portfolio, un site vitrine ou encore un site pour une association. Ce pack a pour seul desavantage un nombre limité de page mais le temps de livraison reste tout de même très court.</p>
-                <ul class="detailsPackage">
-                    <li class="titleDetail">Avantages avec ce pack :</li>
-                    <li class="detailPackage">Nombre de pages : 2-4</li>
-                    <li class="detailPackage">Nombre de revisions : 4</li>
-                    <li class="detailPackage">Temps de livraison : 10-15</li>
-                    <li class="sourceCode">Code source livré</li>
-                    <li class="paymentSupport">Support de payment</li>
-                    <li class="paymentSupport">Nom de domaine personalisé</li>
-                </ul>
-            </div>
-            <div class="details premiumDetails">
-                <p class="titlePackageDetails">Premium</p>
-                <p class="descPackage">Le pack <span class="namePackageDetail">Premium</span> est parfait pour tout type de site. Il est autant adapté pour un site de dropshipping que pour un portfolio développé. Ce pack peut aussi être idéal pour un site tel que pour un site de documentation.</p>
-                <ul class="detailsPackage">
-                    <li class="titleDetail">Avantages avec ce pack :</li>
-                    <li class="detailPackage">Nombre de pages : illimité</li>
-                    <li class="detailPackage">Nombre de revisions : 5</li>
-                    <li class="detailPackage">Temps de livraison : 15-30</li>
-                    <li class="sourceCode">Code source livré</li>
-                    <li class="paymentSupport">Support de payment</li>
-                    <li class="paymentSupport">Nom de domaine personalisé</li>
-                </ul>
-            </div>
-        </section>
-
+        </div>
+        <section id="articles"></section>
         <footer id="footer">
             <h2 class="titleSection">A propos :</h2>
             <div id="sectionsFooter">
@@ -156,8 +86,10 @@
                 </a>
             </div>
         </footer>
+        <script src="./js/data.js"></script>
         <script src="./js/intersectionObserver.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/blog.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
