@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>nesta.gallery</title>
         <link rel="stylesheet" href="./styles/default.css">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/about.css">
     </head>
-    <body onload="loader()">
+    <body onload="load()">
 
         <nav id="topNavbar">
             <ul id="listRedirect">
@@ -20,7 +20,35 @@
                 <li class="redirect" onclick="goThere('about')">A propos</li>
             </ul>
         </nav>
-
+        <h1 class="titlePage">A propos de moi</h1>
+        <section class="infos">
+            <div class="leftSide imgAbout notLoaded">
+                <img src="./res/about/me.png" alt="Une photo de type selfi de moi">
+            </div>
+            <div class="rightSide">
+                <p class="titleAbout notLoaded">Nesta, 16 ans, développeur web</p>
+                <p class="descAbout notLoaded">
+                    Bonjour, je suis un jeune développeur web actuellement en <span class="highlight">Terminale au lycée Saint François d’Assise.</span> 
+                    Je me suis <span class="highlight">passionné</span> pour l’univers du web en troisième. 
+                    J’ai commencé par coder de petit sites pour moi même puis j’ai continué et <span class="highlight">j'ai opéré en entreprise plusieurs fois</span> que se soit pour une <span class="highlight">application web</span>, un <span class="highlight">support de formation</span> ou encore un <span class="highlight">site web</span>. 
+                    Ma passion m’a amené à <span class="highlight">coder plus de 10 sites</span> avec des thèmes divers et variés.
+                </p>
+            </div>
+        </section>
+        <div class="buyMeACookie">
+            <p>Achetez moi un cookie 🍪</p>
+            <div class="cookies">
+                <input type="number" class="nbCookies" placeholder="1" onchange="cookies()" min="1">
+                <p id="priceCookie">= 0€</p>
+                <button class="payCookies" onclick="support()">Soutenir 🎁</button>
+            </div>
+            <div class="paypalContainer">
+                <div id="paypal-button-container"></div>
+            </div>
+            <div id="errorNbCookies">
+                <p id="contentError"></p>
+            </div>
+        </div>
         <footer id="footer">
             <h2 class="titleSection">A propos :</h2>
             <div id="sectionsFooter">
@@ -80,7 +108,11 @@
                 </a>
             </div>
         </footer>
+        <script src="./js/data.js"></script>
         <script src="./js/intersectionObserver.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/about.js"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AWqL7tDn_9x8iMBxjdX3EAXjOcskb7Yeta3S51Jl94-GIVJxZANp16pkF4ybCxlHPxFjv5yNsSo14-S4&currency=EUR"></script>
+        <script src="./js/paypal.js"></script>
     </body>
 </html>

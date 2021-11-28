@@ -1,0 +1,142 @@
+h1.titlePage {
+    margin: 10% 0 0 10%;
+
+}
+section.infos {
+    display: flex;
+    width: 80%;
+    margin: 4% auto 0;
+    justify-content: space-around;
+    align-items: center;
+}
+div.leftSide {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+div.leftSide > img {
+    width: 100%;
+}
+div.rightSide {
+    width: 60%;
+}
+p.titleAbout {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+p.descAbout {
+    font-size: 130%;
+    width: 90%;
+    font-weight: 300;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+div.rightSide > p.descAbout > span.highlight {
+    font-weight: bold;
+}
+div.leftSide.notLoaded {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+p.titleAbout.notLoaded {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+p.descAbout.notLoaded {
+    opacity: 0;
+    transform: translateY(50px);
+}
+div.buyMeACookie {
+    background-color: var(--secondary);
+    display: flex;
+    margin: 10% auto 0;
+    padding: 5%;
+    width: 60%;
+    border-radius: 15px;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+div.buyMeACookie > p {
+    font-size: 150%;
+    font-weight: bold;
+}
+div.buyMeACookie input {
+    width: 10%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 3px solid var(--tertiary);
+    outline: none;
+    font-size: 120%;
+    transition: all 0.5s ease;
+}
+div.buyMeACookie input:focus {
+    border: 3px solid var(--blue);
+}
+div.cookies {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+div.cookies > p {
+    margin-left: 2%;
+    font-size: 140%;
+}
+button.payCookies {
+    margin-left: 5%;
+    background-color: var(--secondary);
+    border: 2px solid var(--blue);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: fit-content;
+    padding: 2% 4%;
+    color: var(--color);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 110%;
+    transition: all 0.5s ease;
+}
+button.payCookies:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+}
+div.paypalContainer {
+    display: none;
+    margin-top: 4%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+div#paypal-button-container {
+    width: 40%;
+}
+div#errorNbCookies {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--error);
+    background-color: var(--background-error);
+    border-radius: 10px;
+    padding: 2% 4%;
+    margin-top: 4%;
+    font-size: 140%;
+    font-weight: 300 !important;
+}
+button.payCookies.cancelButton {
+    border: 3px solid var(--error);
+    background-color: var(--background-error);
+}
+button.payCookies.cancelButton:hover {
+    color: var(--color);
+}

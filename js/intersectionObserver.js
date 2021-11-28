@@ -55,7 +55,6 @@ let observerPie = new IntersectionObserver(entries => {
 let observerTariffs = new IntersectionObserver(entries => {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > 0.7) {
-      console.log("log");
       entry.target.classList.remove('notSeen')
       observerTariffs.unobserve(entry.target)
     } else {
@@ -65,6 +64,8 @@ let observerTariffs = new IntersectionObserver(entries => {
   }, {
     threshold: [0.7]
 });
+
+
 
 let mainTitlesSection = document.querySelectorAll('.mainTitleSection')
 mainTitlesSection.forEach(function (mainTitleSection) {

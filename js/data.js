@@ -5,3 +5,4 @@ const articles = [
         date: '27 novembre 2021'
     }
 ]
+const priceCookie = 2

@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
 :root {
     --primary: #F5F5F5;
     --secondary: #ececec;
     --tertiary: rgb(223, 223, 223);
+    --background-error: #ce4f4f25;
     --button: rgb(42, 42, 42);
 
     --color: #222222;
     --blue: #0177FB;
-    --green: #4fce79;
-    --blueOpacity: #0176fbcc;
     --blueHovered: #005eca;
+    --green: #4fce79;
+    --error: #ce4f4f;
+    /* --blueOpacity: #0176fbcc; */
 }
 * {
     margin: 0;
