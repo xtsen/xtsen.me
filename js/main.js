@@ -1,6 +1,6 @@
 function goThere(where) {
     location.href = `./${where}.html`
 }
-function loader() {
+function load() {
     console.log("loading ...");
 }

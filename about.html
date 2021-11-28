@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="stylesheet" href="./styles/about.css">
     </head>
-    <body onload="load()">
-
+    <body onmouseover="animAbout()">
+        <div id="loader"></div>
         <nav id="topNavbar">
             <ul id="listRedirect">
                 <li class="redirect"  onclick="goThere('index')">Accueil</li>
@@ -55,16 +55,13 @@
                 <div class="containerLinks">
                     <p class="mainTitleContainerLinks">Me contacter</p>
                     <div class="subContainerLinks">
-                        <a href="">
+                        <a href="https://www.instagram.com/nesta.web/">
                             <p class="link">Instagram</p>
                         </a>
-                        <a href="">
+                        <a href="mailto:nesta.web.dev@gmail.com">
                             <p class="link">E-mail</p>
                         </a>
-                        <a href="">
-                            <p class="link">Téléphone</p>
-                        </a>
-                        <a href="">
+                        <a href="https://github.com/xtsen">
                             <p class="link">Github</p>
                         </a>
                     </div>
@@ -72,13 +69,9 @@
                 <div class="containerLinks">
                     <p class="mainTitleContainerLinks">Informations</p>
                     <div class="subContainerLinks">
-                        <a href="">
-                            <p class="link">Mentions légales</p>
-                        </a>
-                        <a href="">
-                            <p class="link">Conditions générales</p>
-                        </a>
-                        <a href="">
+                        <a href="./legacy/legalInformation.html">
+                            <p class="link">Condition d'utilisation</p>
+                        <a href="./legacy/dataProtectionPolicy.html">
                             <p class="link">Protection des données</p>
                         </a>
                     </div>
@@ -86,16 +79,16 @@
                 <div class="containerLinks">
                     <p class="mainTitleContainerLinks">Naviguer</p>
                     <div class="subContainerLinks">
-                        <a href="">
+                        <a href="./index.html">
                             <p class="link">Accueil</p>
                         </a>
-                        <a href="">
+                        <a href="./prices.html">
                             <p class="link">Tarifs</p>
                         </a>
-                        <a href="">
+                        <a href="./blog.html">
                             <p class="link">Blog</p>
                         </a>
-                        <a href="">
+                        <a href="./about.html">
                             <p class="link">A propos</p>
                         </a>
                     </div>
@@ -103,7 +96,7 @@
             </div>
             <div id="subLinks">
                 <p class="link">copyright nesta.web 2021</p>
-                <a href="" class="link">
+                <a href="https://www.instagram.com/nesta.web/" class="link">
                     <p class="link">@nesta.web</p>
                 </a>
             </div>

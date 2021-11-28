@@ -1,9 +1,9 @@
-function load() {
-    setTimeout(() => {
+function animAbout() {
+    // setTimeout(() => {
         document.querySelector(".imgAbout").classList.remove('notLoaded')
         document.querySelector(".titleAbout").classList.remove('notLoaded')
         document.querySelector(".descAbout").classList.remove('notLoaded')
-    }, 300);
+    // }, 300);
 }
 function cookies() {
     document.querySelector("#errorNbCookies").style.display = "none";

@@ -22,7 +22,18 @@ body {
 
     background-color: var(--primary);
     color: var(--color);
+    opacity: 1;
     font-family: 'Outfit', sans-serif;
+    transition: opacity 0.5 ease;
+}
+div#loader {
+    display: none;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blue);
+    opacity: 0;
+    transition: opacity 0.5 ease;
 }
 nav#topNavbar {
     /* background-color: var(--secondary); */
