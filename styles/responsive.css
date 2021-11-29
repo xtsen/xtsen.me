@@ -145,5 +145,8 @@
     div.cookies {
         flex-direction: column;
     }
+    div#paypal-button-container {
+        width: 100%;
+    }
 }
 
