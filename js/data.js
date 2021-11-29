@@ -1,7 +1,7 @@
 const articles = [
     {
         title: 'Bienvenue',
-        content: "Ceci est mon premier article de blog j'espère que vous aprecierez son contenu et que nous pourrons reprendfre contact",
+        content: "Bonjour, je vous souhaite la bienvenue sur mon nouveau site : xtsen.me. Tout d'abord je me présente je suis Nesta Loisy, élève au lycée Saint Francois d'Assise à la Roche sur Yon. Je code depuis maintenant 3 ans et durant cette dernière année, je me suis décidé à participé a des projets. Je raconterai mes expériences futures dans cet espace en esperant pouvoir donner envie à des personnes de se lancer dans le code.",
         date: '27 novembre 2021'
     }
 ]
