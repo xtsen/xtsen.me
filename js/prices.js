@@ -11,6 +11,7 @@ function initPackages() {
         
         containerPackage = document.createElement("div")
         containerPackage.setAttribute("class", `package ${(package.title).toLowerCase()} js-scrollTo`)
+        containerPackage.setAttribute("href", ".moreDetails")
         containerPackage.setAttribute("id", "package" + String(index))
         document.getElementById("packages").appendChild(containerPackage)
         
@@ -38,7 +39,6 @@ function initPackages() {
         document.getElementById("package" + String(index)).appendChild(containerBenefitPackage)
         
         Benefits = package.benefits
-        console.log(Benefits);
         Benefits.forEach(benefit => {
             benefitPackage = document.createElement("p")
             benefitPackage.setAttribute("class", "benefit")
