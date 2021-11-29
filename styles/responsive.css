@@ -107,5 +107,43 @@
     div.article {
         width: 80%;
     }
+
+    /* About */
+
+    h1.titlePage {
+        margin: 20% 0 0 10%;
+    }
+    section.infos {
+        flex-direction: column;
+    }
+    div.leftSide {
+        width: 200px;
+        height: 200px;
+    }
+    div.rightSide {
+        width: 100%;
+    }
+    p.titleAbout {
+        text-align: center;
+    }
+    div.leftSide.notLoaded {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    p.titleAbout.notLoaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    p.descAbout.notLoaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    div.buyMeACookie input {
+        width: 50%;
+        text-align: center;
+    }
+    div.cookies {
+        flex-direction: column;
+    }
 }
 
