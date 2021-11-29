@@ -1,4 +1,67 @@
- /* 
-    Faire le responsive du site 
-    Faire un logo
- */
+@media screen and (max-width: 768px) {
+    header#header {
+        flex-direction: column;
+    }
+    div#heroContainer {
+        width: 80vw;
+        height: 50vh;
+    }
+    h1#bigTitle {
+        font-size: 250%;
+        margin-top: 15%;
+    }
+    p#heroDesc {
+        font-size: 120%;
+    }
+    div.keyNumber {
+        padding: 4%;
+        font-size: 100%;
+    }
+    div#rightSide {
+        width: 70%;
+        margin: 5% auto 10%;
+    }
+    .mainTitleSection {
+        font-size: 200%;
+        margin-bottom: 10%;
+    }
+    div.rowQuality {
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto 10%;
+    }
+    div.textQuality {
+        text-align: center;
+    }
+    div.imageQuality {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+    }
+    div.rowPortfolio {
+        margin-top: 50%;
+        flex-direction: column;
+    }
+    div.textPortfolio {
+        width: 100%;
+        margin-top: 20%;
+    }
+    div.textPortfolio > h1 {
+        text-align: center;
+    }
+    div.imagePortfolio {
+        width: 100%;
+    }
+    p.quote {
+        font-size: 150%;
+        width: 100%;
+    }
+    div.containerGauges {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    svg#svgTransition {
+        display: none;
+    }
+}
+

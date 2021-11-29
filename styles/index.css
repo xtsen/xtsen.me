@@ -24,10 +24,7 @@ h1#bigTitle {
 }
 p#heroDesc {
     font-size: 150%;
-}
-p#heroDesc {
     font-family: 'Exo 2', sans-serif;
-    /* font-weight: bold; */
 }
 div#keyNumbers {
     display: flex;
