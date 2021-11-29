@@ -98,5 +98,14 @@
     div.details:first-of-type {
         margin-top: 15%;
     }
+    
+    /* Blog */
+
+    div.heroIMGHeader {
+        margin-top: 20%;
+    }
+    div.article {
+        width: 80%;
+    }
 }
 
