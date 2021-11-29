@@ -78,5 +78,25 @@
     svg#svgTransition {
         display: none;
     }
+
+    /* Prices */
+    section.containerPrices {
+        margin-top: 20%;
+    }
+    div#packages {
+        flex-direction: column;
+    }
+    div.package {
+        margin: 0 auto 10%;
+        width: 80vw;
+        min-height: 70vh;
+    }
+    div.details {
+        margin: 0 auto 10%;
+        width: 80%;
+    }
+    div.details:first-of-type {
+        margin-top: 15%;
+    }
 }
 
