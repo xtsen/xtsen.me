@@ -1,4 +1,19 @@
 @media screen and (max-width: 768px) {
+    ul#listRedirect {
+        width: 90%;
+    }
+    ul#listRedirect > li.redirect {
+        font-size: 110%;
+    }
+    svg#logo-36 {
+        display: none;
+    }
+    footer > div#sectionsFooter {
+        flex-direction: column;
+    }
+    footer > div#sectionsFooter > div.containerLinks {
+        margin-bottom: 10%;
+    }
     header#header {
         flex-direction: column;
     }

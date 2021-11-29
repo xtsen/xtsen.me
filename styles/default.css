@@ -19,7 +19,7 @@
 }
 body {
     width: 100vw;
-
+    overflow-x: hidden;
     background-color: var(--primary);
     color: var(--color);
     opacity: 1;
@@ -83,37 +83,7 @@ main#main {
     width: 100vw;
     flex-direction: column
 }
-/* section#sectionSkills {
-    display: flex;
-    margin: 10% auto 5%;
-    flex-direction: column;
-    background-color: var(--color);
-    color: var(--primary);
-    width: 45vw;
-    padding: 2%;
-}
-div.skillContainer {
-    width: 90%;
-    background-color: var(--primary);
-    border-radius: 30px;
-    height: 10px;
-    align-content: center;
-    justify-content: center;
-}
-div.skill {
-    background-color: var(--blue);
-    height: 10px;
-    border-radius: 30px
-}
-div.skill#skillHTML {
-    width: 90%;
-}
-div.skill#skillCSS {
-    width: 80%;
-}
-div.skill#skillJS {
-    width: 70%;
-} */
+
 
 
 /* ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠ */
