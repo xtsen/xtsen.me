@@ -9,8 +9,13 @@ function load() {
         document.querySelector("#bigTitle").innerText = nameWebsite
     }
     document.title = nameWebsite;
-    setTimeout(showPage, 4000);
 
+    if (firstLoaderDone == "true") {
+        setTimeout(showPage, 2500);
+    }else {
+        setTimeout(showPage, 5000)
+    }
+    
     if (page == "prices.html") {
         initPrices()
     }

@@ -9,12 +9,12 @@ if (firstLoaderDone == "true") {
     .changeDeleteSpeed(50)
     .changeDelay(50)
     
-    .typeString('xtsen.me')
+    .typeString(nameWebsite)
     .pauseFor(3000)
     .start()
 }
 
-if (firstLoaderDone == null) {
+if (firstLoaderDone == null || firstLoaderDone == "false") {
     new Typewriter(loader, {
         autoStart: true,
         loop: true
