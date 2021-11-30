@@ -1,3 +1,5 @@
+const nameWebsite = "xtsen.me";
+
 const articles = [
     {
         title: 'Bienvenue',

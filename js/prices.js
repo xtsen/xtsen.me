@@ -1,4 +1,4 @@
-function intiPrices() {
+function initPrices() {
     initPackages()
     initDetailPackages()
 }
