@@ -13,12 +13,17 @@
         <meta name="description" content="Xtsen.me est mon portfolio, vous pourrez retrouver sur ce site, mes précédents projets, mes tarifs ainsi que mon blog.">
     </head>
     <body onload="load()">
+
+        <!-- Loader with typewrite library animation -->
         <div id="loader">
             <p id="loaderTypewrite"></p>
         </div>
 
+        <!-- this div is used to hide the entire page when the loader is shown -->
         <div id="toLoad" class="animate-bottom">
-            <nav id="topNavbar" class="blurredbackground">
+
+            <!-- List of redirections. The function goThere("place") is used to travel to the page asked -->
+            <nav id="topNavbar">
                 <ul id="listRedirect">
                     <li class="redirect"  onclick="goThere('index')">Accueil</li>
                     <li class="redirect" onclick="goThere('prices')">Tarifs</li>
@@ -28,6 +33,7 @@
                 </ul>
             </nav>
 
+            <!-- The header to present myself -->
             <header id="header">
                 <div id="leftSide">
                     <div id="heroContainer">
@@ -55,6 +61,8 @@
                     <img id="heroImg" src="./res/index/heroImg.png" alt="">
                 </div>
             </header>
+
+            <!-- This svg is used to make the transition between the header background and the rest of the page -->
             <svg id="svgTransition" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="200" preserveAspectRatio="none" viewBox="0 0 1440 200">
                 <g mask="url(&quot;#SvgjsMask1025&quot;)" fill="none">
                     <path d="M1464 200L0 200 L0 59.32Q143.82 83.14, 120 226.96Q105.8 92.76, 240 78.57Q269.96 36.53, 312 66.49Q370.27 52.77, 384 111.04Q476.73 83.77, 504 176.5Q523.26 75.76, 624 95.02Q665.63 64.64, 696 106.27Q725.39 15.66, 816 45.06Q899.52 8.58, 936 92.1Q1039.97 124.07, 1008 228.05Q992.33 92.38, 1128 76.71Q1158.47 35.18, 1200 65.65Q1227.44 21.09, 1272 48.53Q1356.76 13.29, 1392 98.05Q1498.23 132.28, 1464 238.51z" fill="rgba(24, 47, 93, 1)"></path>
@@ -66,27 +74,7 @@
                 </defs>
             </svg>
             <main id="main">
-                <!-- <section id="sectionSkills">
-                    <p class="titleSection"></p>
-                    <div class="sectionSkills">
-                        <p class="titleSkill">HTML</p>
-                        <div id="skillHTMLContainer" class="skillContainer">
-                            <div id="skillHTML" class="skill"></div>
-                        </div>
-                    </div>
-                    <div class="sectionSkills">
-                        <p class="titleSkill">CSS</p>
-                        <div id="skillCSSContainer" class="skillContainer">
-                            <div id="skillCSS" class="skill"></div>
-                        </div>
-                    </div>
-                    <div class="sectionSkills">
-                        <p class="titleSkill">Javascript</p>
-                        <div id="skillJSContainer" class="skillContainer">
-                            <div id="skillJS" class="skill"></div>
-                        </div>
-                    </div>
-                </section> -->
+                
                 <div id="containerQualities" class="section">
                     <h1 class="mainTitleSection">Pourquoi moi ?</h1>
                     <div class="rowQuality">
@@ -119,6 +107,8 @@
                     </div>
 
                 </div>
+
+                <!-- The class "notReduced will be removed when the ratio will be less thae 0.6" -->
                 <div class="transition notreduced">
                     <h1 class="mainTitleSection">Mon portfolio</h1>
                 </div>
@@ -262,6 +252,8 @@
                 </div>
             </footer>
         </div>
+
+        <!-- We need the first line to import the typewriter package, the others are used to transitions and initialization -->
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="./js/data.js"></script>
         <script src="./js/typewriter.js"></script>

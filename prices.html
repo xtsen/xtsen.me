@@ -11,11 +11,16 @@
         <link rel="stylesheet" href="./styles/responsive.css">
     </head>
     <body onload="load()">
+
+        <!-- Loader with typewrite library animation -->
         <div id="loader">
             <p id="loaderTypewrite"></p>
         </div>
 
+        <!-- this div is used to hide the entire page when the loader is shown -->
         <div id="toLoad" class="animate-bottom">
+
+            <!-- List of redirections. The function goThere("place") is used to travel to the page asked -->
             <nav id="topNavbar">
                 <ul id="listRedirect">
                     <li class="redirect"  onclick="goThere('index')">Accueil</li>
@@ -28,8 +33,11 @@
 
             <section class="containerPrices">
                 <h1>Mes tarifs :</h1>
+
+                <!-- The content of the following div will be generated in js -->
                 <div id="packages"></div>
             </section>
+                <!-- The content of the following section will be generated in js -->
             <section id="moreDetails">
             </section>
 
@@ -86,6 +94,8 @@
                 </div>
             </footer>
         </div>
+        
+        <!-- We need the first line to import the typewriter package, the others are used to transitions and initialization -->
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="./js/data.js"></script>
         <script src="./js/typewriter.js"></script>
