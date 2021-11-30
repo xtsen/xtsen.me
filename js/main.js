@@ -11,7 +11,7 @@ function load() {
     document.title = nameWebsite;
 
     if (firstLoaderDone == "true") {
-        setTimeout(showPage, 2500);
+        setTimeout(showPage, 2000);
     }else {
         setTimeout(showPage, 5000)
     }
