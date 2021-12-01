@@ -1,4 +1,7 @@
 function initBlog() {
+    /**
+     * This function is used to get articles from ./data.js and print them on the page
+     */
     section = document.getElementById("articles")
     index = 0
     section.innerHTML = ""

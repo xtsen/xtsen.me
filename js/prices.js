@@ -1,8 +1,14 @@
 function initPrices() {
+    /**
+     * This function is used to create the packages and after the detail of these packages below.
+     */
     initPackages()
     initDetailPackages()
 }
 function initPackages() {
+    /**
+     * InitPackages is used to create packages and append each package on the div with id packages
+     */
     section = document.getElementById("packages")
     index = 0
     section.innerHTML = ""
@@ -52,6 +58,9 @@ function initPackages() {
     });
 }
 function initDetailPackages() {
+    /**
+     * initDetailPackages is used to create the div width details about each package and append them in the div with id moreDetails
+     */
     section = document.getElementById("moreDetails")
     index = 0
     section.innerHTML = ""

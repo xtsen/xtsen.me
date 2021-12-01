@@ -1,17 +1,24 @@
 function animAbout() {
-    // setTimeout(() => {
-        document.querySelector(".imgAbout").classList.remove('notLoaded')
-        document.querySelector(".titleAbout").classList.remove('notLoaded')
-        document.querySelector(".descAbout").classList.remove('notLoaded')
-    // }, 300);
+    /**
+     * This function is called to hide elements
+     */
+    document.querySelector(".imgAbout").classList.remove('notLoaded')
+    document.querySelector(".titleAbout").classList.remove('notLoaded')
+    document.querySelector(".descAbout").classList.remove('notLoaded')
 }
 function cookies() {
+    /**
+     * This function manage this donation container
+     */
     document.querySelector("#errorNbCookies").style.display = "none";
     document.querySelector(".paypalContainer").style.display = "none";
     nbCookies = document.querySelector(".nbCookies").value
     document.getElementById("priceCookie").innerText = "= " + String(nbCookies*priceCookie) + "€"
 }
 function support() {
+    /**
+     * This function is used to show paypal buttons when somenone click on the button "soutenir"
+     */
     nbCookies = document.querySelector(".nbCookies").value
     cancelButton = document.querySelector(".payCookies")
     if (nbCookies <= 0) {

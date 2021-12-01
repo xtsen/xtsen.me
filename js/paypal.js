@@ -1,4 +1,7 @@
 nbCookies = document.querySelector(".nbCookies").value
+/**
+ * This function if from the paypal website for developer
+ */
 paypal.Buttons({
     createOrder: function(data, actions) {
       // This function sets up the details of the transaction, including the amount and line item details.

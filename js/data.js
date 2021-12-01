@@ -1,3 +1,8 @@
+/**
+ * This file is where all the data of the website are stored
+ * Then we can use it everywhere
+ */
+
 const nameWebsite = "xtsen.me";
 
 const articles = [

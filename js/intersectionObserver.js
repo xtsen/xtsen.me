@@ -1,3 +1,6 @@
+/**
+ * These objects from IntersectionObserver library are used to show elements when a certain ratio 
+ */
 let observer = new IntersectionObserver(function (observables) {
   observables.forEach(function (observable) {
     if (observable.intersectionRatio > 0.6) {

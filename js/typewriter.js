@@ -1,5 +1,8 @@
 const loader = document.getElementById("loaderTypewrite")
 
+/**
+ * These few lines are used to create an effect of typing in real time 
+ */
 firstLoaderDone = window.localStorage.getItem("firstLoaderDone")
 if (firstLoaderDone == "true") {
     new Typewriter(loader, {
