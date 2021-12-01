@@ -24,12 +24,12 @@ body {
     color: var(--color);
     opacity: 1;
     font-family: 'Outfit', sans-serif;
-    transition: opacity 0.5 ease;
+    transition: opacity 0.5s ease;
 }
 #toLoad {
     display: none;
     flex-direction: column;
-    transition: opacity 0.5 ease;
+    transition: opacity 0.5s ease;
 }
 #loader {
     display: flex;
@@ -42,7 +42,7 @@ p#loaderTypewrite {
     text-align: center;
     font-size: 300%;
     font-weight: 500;
-    font-style: bold;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 .animate-bottom {
