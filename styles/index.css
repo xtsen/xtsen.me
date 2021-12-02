@@ -299,8 +299,28 @@ section.validation {
     color: var(--color);
     transition: all 0.5s ease;
 }
-p#cssValidator {
+div.labels {
+    display: flex;
+    flex-direction: row;
+}
+p.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 4%;
+    background-color: var(--secondary);
     width: fit-content;
     display: flex;
     margin: 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+p.label:hover {
+    transform: translateY(-10px) translateX(-10px);
+    box-shadow: 7px 7px 10px 5px var(--tertiary);
+}
+p.label > a {
+    display: flex;
+    margin: 10% auto 0;
 }
