@@ -27,7 +27,7 @@ div.leftSide > img {
 div.rightSide {
     width: 60%;
 }
-p.titleAbout {
+h2.titleAbout {
     font-size: 200%;
     font-weight: bold;
     margin-bottom: 2%;
