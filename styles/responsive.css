@@ -78,6 +78,14 @@
     svg#svgTransition {
         display: none;
     }
+    .labels {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    p.label {
+        margin: 2.5% auto;
+    }
+
 
     /* Prices */
     section.containerPrices {
