@@ -13,6 +13,10 @@
     --error: #ce4f4f;
     /* --blueOpacity: #0176fbcc; */
 }
+::selection {
+    background-color: var(--color);
+    color: var(--primary);
+}
 * {
     margin: 0;
     padding: 0;
@@ -104,7 +108,12 @@ ul#listRedirect > li.redirect:hover {
     /* background-size: 100% 70%; */
     background-position: 0 15%;
 }
-
+svg#logo-36 {
+    transition: all 0.5s ease;
+}
+svg#logo-36:hover {
+    transform: rotate(180deg);
+}
 #svgTransition {
     transform: scaleY(-1);
     width: 100vw;
