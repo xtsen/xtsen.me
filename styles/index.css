@@ -198,11 +198,13 @@ section.performance.notpassed {
     color: var(--primary);
 }
 p.quote {
+    display: flex;
+    margin: 0 auto;
     padding: 8%;
     font-size: 200%;
     margin-top: 10%;
     text-align: left;
-    width: fit-content;
+    width: 50vw;
     background: linear-gradient(120deg, var(--blue) 0%, var(--blue) 100%);
     background-repeat: no-repeat;
     background-size: 1% 70%;
@@ -287,4 +289,18 @@ div.containerGauges {
     width:100%;  
     font-size:48px; 
     font-weight:700 
+}
+section.validation {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary);
+    color: var(--color);
+    transition: all 0.5s ease;
+}
+p#cssValidator {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
 }
