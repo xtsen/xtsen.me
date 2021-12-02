@@ -14,6 +14,19 @@ if (firstLoaderDone == "true") {
     
     .typeString(nameWebsite)
     .pauseFor(3000)
+    .deleteChars(2)
+    .typeString('dev')
+    .pauseFor(1000)
+    .deleteChars(9)
+    .typeString('nesta')
+    .pauseFor(500)
+    .deleteChars(1)
+    .typeString('x')
+    .pauseFor(500)
+    .deleteChars(5)
+    .typeString('xtsen')
+    .pauseFor(500)
+    .typeString('.me')
     .start()
 }
 
