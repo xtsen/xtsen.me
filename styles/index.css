@@ -197,7 +197,7 @@ section.performance.notpassed {
     background-color: var(--color);
     color: var(--primary);
 }
-p.quote {
+.quote {
     display: flex;
     margin: 0 auto;
     padding: 8%;
