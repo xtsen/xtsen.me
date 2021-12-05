@@ -121,7 +121,7 @@ div.transition {
     width: 100vw;
     margin-bottom: 0;
     z-index: -1000;
-    background-image: url('../res/index/transition1.jpeg');
+    background-image: url('../res/index/transition1.webp');
     background-size: cover;
     background-position: center center;
     content: "";
