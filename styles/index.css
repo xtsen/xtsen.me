@@ -152,8 +152,12 @@ div.rowPortfolio {
     margin: 8% auto 0;
     opacity: 1;
     justify-content: space-between;
-    transform: translateX(0px);
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateX(0px) translateY(0px);
+    transition: all 0.5s ease;
+}
+div.rowPortfolio:hover {
+    transform: translateY(-20px) translateX(-20px);
+    box-shadow: 15px 15px 10px var(--button);
 }
 div.rowPortfolio:last-of-type {
     margin-bottom: 10%;
