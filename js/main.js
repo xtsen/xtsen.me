@@ -14,6 +14,7 @@ function load() {
     var page = path.split("/").pop();
 
     if (page == "index.html") {
+        initPortfolio()
         document.querySelector("#bigTitle").innerText = nameWebsite
     }
     document.title = nameWebsite;

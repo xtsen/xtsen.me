@@ -178,13 +178,17 @@ div.textPortfolio {
     width: 45%;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
+div.textPortfolio > h2 {
+    font-size: 200%;
+    margin-bottom: 2%;
+}
 div.imagePortfolio {
     display: flex;
-    /* margin: 0 auto; */
     width: 50%;
 }
-div.imagePortfolio > img {
+div.imagePortfolio > .imageWebsitePortfolio {
     width: 100%;
+    height: auto;
 }
 
 section.performance {

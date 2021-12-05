@@ -5,6 +5,29 @@
 
 const nameWebsite = "xtsen.me";
 
+const Websites = [
+    {
+        title: "SFDApp",
+        desc: "Ici je suis parti sur un domaine un peu plus éducatif, j'avais pour objectif de re-designer le site internet de mon lycée. Pour faire ce site, il m'a fallu environ 40h."
+    },
+    {
+        title: "Nihfagou Products",
+        desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produites informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail."
+    },
+    {
+        title: "YKA",
+        desc: "YKA est un site de vente de vêtements, ce site intègre un système de panel de connexion ainsi qu'un panier. pour ce site, 50h ont été nécessaires."
+    },
+    {
+        title: "Ishy",
+        desc: "Ishy est un site 'vitrine' pour un robot discord. Ce genre de site est très répandu. Ce site à nécessité 10h de travail."
+    },
+    {
+        title: "Skate In Peace",
+        desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h."
+    },
+]
+
 const articles = [
     {
         title: 'Bienvenue',
