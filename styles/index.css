@@ -137,6 +137,7 @@ div.transition.notreduced {
     height: 1vh;
 }
 section.portfolio {
+    display: block;
     width: 100vw;
     background-color: var(--color);
     color: var(--primary);
