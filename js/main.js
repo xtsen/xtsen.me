@@ -13,7 +13,8 @@ function load() {
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
-    if (page == "index.html") {
+    if (page == "index.html" || !page) {
+
         document.querySelector("#bigTitle").innerText = nameWebsite
         initPortfolio()
     }
