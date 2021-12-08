@@ -4,9 +4,7 @@ function initPortfolio() {
 
     Websites.forEach(website => {
         const cardWebsite = `
-            <div class="rowPortfolio ${index % 2 == 0 ? "rowInverted" : ""} {
-                
-            }}">
+            <div class="rowPortfolio ${index % 2 == 0 ? "rowInverted" : ""}" onclick="window.location.href = '${website.url}'">
                 <div class="imagePortfolio">
                     <img class="imageWebsitePortfolio" src="./res/portfolio/${website.title}.webp" alt="An image from the website ${website.title}"/>
                 </div>

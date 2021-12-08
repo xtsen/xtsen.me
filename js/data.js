@@ -7,28 +7,34 @@ const nameWebsite = "xtsen.me";
 
 const Websites = [
     {
-        title: "SFDApp",
-        desc: "Ici je suis parti sur un domaine un peu plus éducatif, j'avais pour objectif de re-designer le site internet de mon lycée. Pour faire ce site, il m'a fallu environ 40h."
+        title: "Gallery",
+        desc: "Gallery est un projet personnel afin de m'améliorer. Ce site a pour but de créer une galerie originale. Ce site ne contenant qu'une seule page m'a demandé environ 5h de travail.",
+        url: "https://xtsen.github.io/portfolioExample/"
     },
     {
         title: "Nihfagou Products",
-        desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produites informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail."
+        desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produites informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail.",
+        url: "https://xtsen.github.io/nihfagou-market/"
     },
     {
         title: "YKA",
-        desc: "YKA est un site de vente de vêtements, ce site intègre un système de panel de connexion ainsi qu'un panier. pour ce site, 50h ont été nécessaires."
+        desc: "YKA est un site de vente de vêtements, ce site intègre un système de panel de connexion ainsi qu'un panier. pour ce site, 50h ont été nécessaires.",
+        ulr: "http://yka.epizy.com/"
     },
     {
         title: "Ishy",
-        desc: "Ishy est un site 'vitrine' pour un robot discord. Ce genre de site est très répandu. Ce site à nécessité 10h de travail."
+        desc: "Ishy est un site 'vitrine' pour un robot discord. Ce genre de site est très répandu. Ce site à nécessité 10h de travail.",
+        ulr: "https://xtsen.github.io/Ishy/"
+    },
+    {
+        title: "SFDApp",
+        desc: "Ici je suis parti sur un domaine un peu plus éducatif, j'avais pour objectif de re-designer le site internet de mon lycée. Pour faire ce site, il m'a fallu environ 40h.",
+        url: "https://xtsen.github.io/le-site-sfda/"
     },
     {
         title: "Skate In Peace",
-        desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h."
-    },
-    {
-        title: "Gallery",
-        desc: "Gallery est un projet personnel afin de m'améliorer. Ce site a pour but de créer une galerie originale. Ce site ne contenant qu'une seule page m'a demandé environ 5h de travail."
+        desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h.",
+        url: "https://xtsen.github.io/Everyweb/Skate-in-peace/home.html"
     },
 ]
 
