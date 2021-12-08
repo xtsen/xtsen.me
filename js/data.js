@@ -26,6 +26,10 @@ const Websites = [
         title: "Skate In Peace",
         desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h."
     },
+    {
+        title: "Gallery",
+        desc: "Gallery est un projet personnel afin de m'améliorer. Ce site a pour but de créer une galerie originale. Ce site ne contenant qu'une seule page m'a demandé environ 5h de travail."
+    },
 ]
 
 const articles = [
