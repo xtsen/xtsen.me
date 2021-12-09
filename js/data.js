@@ -19,12 +19,12 @@ const Websites = [
     {
         title: "YKA",
         desc: "YKA est un site de vente de vêtements, ce site intègre un système de panel de connexion ainsi qu'un panier. pour ce site, 50h ont été nécessaires.",
-        ulr: "http://yka.epizy.com/"
+        url: "http://yka.epizy.com/"
     },
     {
         title: "Ishy",
         desc: "Ishy est un site 'vitrine' pour un robot discord. Ce genre de site est très répandu. Ce site à nécessité 10h de travail.",
-        ulr: "https://xtsen.github.io/Ishy/"
+        url: "https://xtsen.github.io/Ishy/"
     },
     {
         title: "SFDApp",
