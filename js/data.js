@@ -14,7 +14,7 @@ const Websites = [
     {
         title: "Just Hi",
         desc: "Just Hi est une plateforme permettant de presenter une collection de NFT. Cette plateforme de seulement 2 pages m'a pris un peu plus de 10h de travail",
-        url: "https://xtsen.github.io/just-hi/"
+        url: "https://xtsen.github.io/Just-Hi/"
     },
     {
         title: "Nihfagou Products",
