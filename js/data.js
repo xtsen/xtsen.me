@@ -12,6 +12,11 @@ const Websites = [
         url: "https://xtsen.github.io/portfolioExample/"
     },
     {
+        title: "Just Hi",
+        desc: "Just Hi est une plateforme permettant de presenter une collection de NFT. Cette plateforme de seulement 2 pages m'a pris un peu plus de 10h de travail",
+        url: "https://xtsen.github.io/just-hi/"
+    },
+    {
         title: "Nihfagou Products",
         desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produites informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail.",
         url: "https://xtsen.github.io/nihfagou-market/"
