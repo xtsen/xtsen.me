@@ -78,6 +78,9 @@ div#extra h2.titleExtra {
 }
 div#extra p.extra {
     font-size: 150%;
+    margin-top: 2%;
+}
+div#extra p.extra:first-of-type {
     margin-top: 5%;
 }
 section#moreDetails {
