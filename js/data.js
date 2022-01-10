@@ -18,7 +18,7 @@ const Websites = [
     },
     {
         title: "Nihfagou Products",
-        desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produites informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail.",
+        desc: "Nihfagou Products est un site de revente de téléphones reconditionnés mais aussi d'autres produits informatiques et technologiques. Ce design a été inspiré de backmarket. Ce projet a nécessité environ 30h de travail.",
         url: "https://xtsen.github.io/nihfagou-market/"
     },
     {
