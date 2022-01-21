@@ -1,3 +1,38 @@
+div.inputMethodPrices {
+    display: flex;
+    width: 20vw;
+    margin: 2.5% auto;
+    background-color: var(--blue);
+    justify-content: space-between;
+    border-radius: 50px;
+    overflow: hidden;
+}
+input#inputMethodPrices {
+    display: none;
+}
+div.inputMethodPrices div {
+    padding: 5%;
+    color: var(--primary);
+    font-size: 130%;
+    cursor: pointer;
+    width: 55%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+div.inputMethodPrices div.wordpress {
+    border-radius: 0 50px 50px 0;
+    background: transparent;
+}
+div.inputMethodPrices div.classic {
+    border-radius: 50px 0 0 50px;
+    background-color: var(--blueHovered)
+}
+input#inputMethodPrices:checked ~ div.wordpress {
+    background-color: var(--blueHovered)
+}
+input#inputMethodPrices:checked ~ div.classic {
+    background-color: transparent
+}
 section.containerPrices {
     margin-top: 8%;
 }

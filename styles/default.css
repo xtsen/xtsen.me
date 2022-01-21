@@ -6,12 +6,12 @@
     --background-error: #ce4f4f25;
     --button: rgb(42, 42, 42);
 
-    --color: #222222;
+    --color: #111111;
     --blue: #0177FB;
     --blueHovered: #005eca;
     --green: #4fce79;
     --error: #ce4f4f;
-    /* --blueOpacity: #0176fbcc; */
+    --blueOpacity: #0176fbb4;
 }
 ::selection {
     background-color: var(--color);

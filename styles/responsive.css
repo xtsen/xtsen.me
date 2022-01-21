@@ -88,6 +88,9 @@
 
 
     /* Prices */
+    div.inputMethodPrices {
+        width: 60vw;
+    }
     section.containerPrices {
         margin-top: 20%;
     }

@@ -39,7 +39,7 @@ div.keyNumber {
     width: 40%;
     padding: 2%;
     font-size: 150%;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.5s ease;
 }
 div.keyNumber:hover {

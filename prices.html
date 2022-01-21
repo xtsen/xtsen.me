@@ -33,8 +33,12 @@
             </nav>
 
             <section class="containerPrices">
-                <h1>Mes tarifs :</h1>
-
+                <h1>Mes tarifs</h1>
+                    <div class="inputMethodPrices">
+                        <input type="checkbox" value="None" id="inputMethodPrices" name="check"/>
+                        <div class="classic" onclick="inputMethodPrices(false)">Classic</div>
+                        <div class="wordpress" onclick="inputMethodPrices(true)">Wordpress</div>
+                    </div>
                 <!-- The content of the following div will be generated in js -->
                 <div id="packages"></div>
                 <div id="extra">

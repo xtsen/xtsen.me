@@ -5,6 +5,15 @@ function initPrices() {
     initPackages()
     initDetailPackages()
 }
+function inputMethodPrices(bool) {
+    document.getElementById('inputMethodPrices').checked = bool
+    if (bool === true) {
+        initPackagesWordpress()
+    }
+    else {
+        initPackages()
+    }
+}
 function initPackages() {
     /**
      * InitPackages is used to create packages and append each package on the div with id packages
@@ -14,47 +23,49 @@ function initPackages() {
     section.innerHTML = ""
     indexBenefit = 0
     Packages.forEach(package => {
+        packageContainer = `
+        <div class="package ${(package.title).toLowerCase()} js-scrollTo" href=".moreDetails" id="package${String(indexBenefit)}">
+        <p class="titlePackage" id="titlePackage${String(indexBenefit)}">${package.title}</p>
+        <p class="pricePackage" id="pricePackage${String(indexBenefit)}">${package.price}<span class="euroSign" id="euroSign${String(indexBenefit)}">€</span></p>
+        <div class="benefits" id="benefits${String(indexBenefit)}">
+        </div>
+        </div>
+        `
+        section.innerHTML += packageContainer
+        benefits = package.benefits
+        benefits.forEach(benefit => {
+            document.getElementById(`benefits${String(indexBenefit)}`).innerHTML += `<p class="benefit" id="${benefit}">${benefit}</p>`
+        })
         
-        containerPackage = document.createElement("div")
-        containerPackage.setAttribute("class", `package ${(package.title).toLowerCase()} js-scrollTo`)
-        containerPackage.setAttribute("href", ".moreDetails")
-        containerPackage.setAttribute("id", "package" + String(index))
-        document.getElementById("packages").appendChild(containerPackage)
-        
-        titlePackage = document.createElement("p")
-        titlePackage.setAttribute("class", "titlePackage")
-        titlePackage.setAttribute("id", "titlePackage" + String(index))
-        document.getElementById("package" + String(index)).appendChild(titlePackage)
-        document.getElementById("titlePackage" + String(index)).innerText = package.title
-        
-        pricePackage = document.createElement("p")
-        pricePackage.setAttribute("class", "pricePackage")
-        pricePackage.setAttribute("id", "pricePackage" + String(index))
-        document.getElementById("package" + String(index)).appendChild(pricePackage)
-        document.getElementById("pricePackage" + String(index)).innerText = package.price
-        
-        spanPricePackage = document.createElement("span")
-        spanPricePackage.setAttribute("class", "euroSign")
-        spanPricePackage.setAttribute("id", "euroSign" + String(index))
-        document.getElementById("pricePackage" + String(index)).appendChild(spanPricePackage)
-        document.getElementById("euroSign" + String(index)).innerText = "€"
-        
-        containerBenefitPackage = document.createElement("div")
-        containerBenefitPackage.setAttribute("class", `benefits`)
-        containerBenefitPackage.setAttribute("id", "benefits" + String(index))
-        document.getElementById("package" + String(index)).appendChild(containerBenefitPackage)
-        
-        Benefits = package.benefits
-        Benefits.forEach(benefit => {
-            benefitPackage = document.createElement("p")
-            benefitPackage.setAttribute("class", "benefit")
-            benefitPackage.setAttribute("id", "benefitPackage" + String(indexBenefit))
-            document.getElementById("benefits" + String(index)).appendChild(benefitPackage)
-            document.getElementById("benefitPackage" + String(indexBenefit)).innerText = benefit
-            indexBenefit += 1
-        });
-
         index+=1
+        indexBenefit += 1
+    });
+}
+function initPackagesWordpress() {
+    /**
+     * InitPackages is used to create packages and append each package on the div with id packages
+     */
+    section = document.getElementById("packages")
+    index = 0
+    section.innerHTML = ""
+    indexBenefit = 0
+    Packages.forEach(package => {
+        packageContainer = `
+        <div class="package ${(package.title).toLowerCase()} js-scrollTo" href=".moreDetails" id="package${String(indexBenefit)}">
+        <p class="titlePackage" id="titlePackage${String(indexBenefit)}">${package.title}</p>
+        <p class="pricePackage" id="pricePackage${String(indexBenefit)}">${package.price-50*(index+1)}<span class="euroSign" id="euroSign${String(indexBenefit)}">€</span></p>
+        <div class="benefits" id="benefits${String(indexBenefit)}">
+        </div>
+        </div>
+        `
+        section.innerHTML += packageContainer
+        benefits = package.benefits
+        benefits.forEach(benefit => {
+            document.getElementById(`benefits${String(indexBenefit)}`).innerHTML += `<p class="benefit" id="${benefit}">${benefit}</p>`
+        })
+        
+        index+=1
+        indexBenefit += 1
     });
 }
 function initDetailPackages() {
