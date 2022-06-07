@@ -37,11 +37,6 @@ const Websites = [
         url: "https://xtsen.github.io/Ishy/"
     },
     {
-        title: "SFDApp",
-        desc: "Ici je suis parti sur un domaine un peu plus éducatif, j'avais pour objectif de re-designer le site internet de mon lycée. Pour faire ce site, il m'a fallu environ 40h.",
-        url: "https://xtsen.github.io/le-site-sfda/"
-    },
-    {
         title: "Skate In Peace",
         desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h.",
         url: "https://xtsen.github.io/Everyweb/Skate-in-peace/home.html"
