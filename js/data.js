@@ -12,6 +12,11 @@ const Websites = [
         url: "https://xtsen.github.io/portfolioExample/"
     },
     {
+        title: "Big Pants Skateboard",
+        desc: "Big Pants Skateboard était un template de site destiné a une marque de vetements axé sur le skateboard. Cette plateforme porte un nouveau style épuré, propre à une marque de vetements. ",
+        url: "https://xtsen.github.io/BPS/"
+    },
+    {
         title: "Just Hi",
         desc: "Just Hi est une plateforme permettant de presenter une collection de NFT. Cette plateforme de seulement 2 pages m'a pris un peu plus de 10h de travail",
         url: "https://xtsen.github.io/Just-Hi/"
