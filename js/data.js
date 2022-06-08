@@ -36,11 +36,11 @@ const Websites = [
         desc: "Ishy est un site 'vitrine' pour un robot discord. Ce genre de site est très répandu. Ce site à nécessité 10h de travail.",
         url: "https://xtsen.github.io/Ishy/"
     },
-    {
-        title: "Skate In Peace",
-        desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h.",
-        url: "https://xtsen.github.io/Everyweb/Skate-in-peace/home.html"
-    },
+    // {
+    //     title: "Skate In Peace",
+    //     desc: "Skate In Peace était mon projet de fin d'année de première. J'y ai intégré des fonctionnalités assez compliquées c'est pour cela que ce projet a nécessité environ 20h.",
+    //     url: "https://xtsen.github.io/Everyweb/Skate-in-peace/home.html"
+    // },
 ]
 
 const articles = [
