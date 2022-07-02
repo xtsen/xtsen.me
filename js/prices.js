@@ -53,7 +53,7 @@ function initPackagesWordpress() {
         packageContainer = `
         <div class="package ${(package.title).toLowerCase()} js-scrollTo" href=".moreDetails" id="package${String(indexBenefit)}">
         <p class="titlePackage" id="titlePackage${String(indexBenefit)}">${package.title}</p>
-        <p class="pricePackage" id="pricePackage${String(indexBenefit)}">${package.price-50*(index+1)}<span class="euroSign" id="euroSign${String(indexBenefit)}">€</span></p>
+        <p class="pricePackage" id="pricePackage${String(indexBenefit)}">${package.price-100*(index+1)}<span class="euroSign" id="euroSign${String(indexBenefit)}">€</span></p>
         <div class="benefits" id="benefits${String(indexBenefit)}">
         </div>
         </div>
