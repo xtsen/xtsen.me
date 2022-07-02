@@ -55,7 +55,7 @@ const priceCookie = 2
 const Packages = [
     {
         title: "Standard",
-        price: 150, 
+        price: 300, 
         benefits : [
             "Nombre de pages : 3", 
             "Nombre de revisions : 2",
@@ -66,7 +66,7 @@ const Packages = [
     },
     {
         title: "Pro",
-        price: 250, 
+        price: 500, 
         benefits : [
             "Nombre de pages : 3-5", 
             "Nombre de revisions : 4",
@@ -80,7 +80,7 @@ const Packages = [
     },
     {
         title: "Premium",
-        price: 400, 
+        price: 800, 
         benefits : [
             "Nombre de pages : 5 ou plus", 
             "Nombre de revisions : 3",
